@@ -4,7 +4,6 @@
     "homepage": "https://github.com/syswd/query-builder",
     "keywords": [ "query builder", "database", "sql" ],
     "license": "MIT",
-    "version": "1.0.5",
     "authors": [
         {
             "name": "Adam Banaszkiewicz",
