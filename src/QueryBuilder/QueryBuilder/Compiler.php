@@ -65,6 +65,8 @@ class Compiler
 
         if(isset($querySegments['orderBy']) && is_array($querySegments['orderBy']))
         {
+            $orderBy = '';
+            
             foreach($querySegments['orderBy'] as $orderByItem)
             {
                 $orderBy .= $this->quoteTable($orderByItem['field']).' '.$orderByItem['type'].', ';

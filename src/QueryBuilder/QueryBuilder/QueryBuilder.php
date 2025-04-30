@@ -1007,7 +1007,7 @@ class QueryBuilder
 
     protected function handleWhere($key, $operator = null, $value = null, $joiner = 'AND')
     {
-        if($key && $operator && ! $value)
+        if($key && $operator && $value === null)
         {
             $value    = $operator;
             $operator = '=';
