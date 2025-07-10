@@ -623,7 +623,7 @@ class QueryBuilder
 
         $totalCount = $queryCount->count();
         $totalPage = ceil($totalCount / $perPage);
-        $page = min($page, $totalPage);
+        $page = $totalPage ? min($page, $totalPage) : 1;
         $offset = ($page - 1) * $perPage;
 
         $this->limit($perPage);
