@@ -13,10 +13,10 @@ use Requtize\QueryBuilder\Event\EventDispatcherInterface;
 
 class QueryBuilderFactory
 {
-    protected Connection $connection;
-    protected ?EventDispatcherInterface $eventDispatcher;
+    protected $connection;
+    protected $eventDispatcher;
 
-    public function __construct(Connection $connection, ?EventDispatcherInterface $eventDispatcher = null)
+    public function __construct(Connection $connection, EventDispatcherInterface $eventDispatcher = null)
     {
         $this->connection = $connection;
         $this->eventDispatcher = $eventDispatcher;
