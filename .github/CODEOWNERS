@@ -1,0 +1,4 @@
+# Only @renan-taskinset may approve pull requests into protected branches.
+# Combined with branch ruleset 'protect-main-master-dev' this makes his
+# approval (or bypass) the only path to merge into main/master/dev/develop.
+* @renan-taskinset
